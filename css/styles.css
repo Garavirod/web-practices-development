@@ -88,3 +88,105 @@ header .textos-header {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Abput us */
+
+.container-about-us {
+    display: flex;
+    /*this distribuite de space beween the objects*/
+    justify-content: space-evenly;
+}
+
+.image-about-us {
+    width: 48%;
+}
+
+.about-us .text-content {
+    width: 48%;
+    /* background-color: #642a73; */
+}
+
+.text-content h3 span {
+    background-color: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.text-content p {
+    padding: 2px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* Gallery */
+
+.suitcase {
+    background-color: #f2f2f2;
+}
+
+.gallery-suitcase {
+    display: flex;
+    justify-content: space-evenly;
+    /* If it is more than the precentage 'go' */
+    flex-wrap: wrap;
+}
+
+.image-suitcase {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    height: 200px;
+}
+
+
+/* Direct child 'img' */
+
+.image-suitcase>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-gallery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-gallery img {
+    width: 50px;
+}
+
+.hover-gallery p {
+    color: #fff;
+}
+
+.hover-gallery>i {
+    font-size: 40px;
+    color: #f80759;
+}
+
+.image-suitcase:hover .hover-gallery {
+    transform: scale(1);
+}

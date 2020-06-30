@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chicle</title>
+	<style type="text/css">
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+
+		.caja:hover{
+			
+			-webkit-animation: 1s chicle 1;
+		}
+
+
+		@-webkit-keyframes chicle{
+			
+			30%{
+				-webkit-transform: scaleX(1.30) scaleY(0.75);
+			}
+
+			40%{
+
+				-webkit-transform: scaleX(0.75) scaleY(1.30);
+			}
+
+
+			60%{
+
+				-webkit-transform: scaleX(1.20) scaleY(0.85);
+			}
+		}
+
+	</style>
+</head>
+<body>
+		<div class="caja">
+		<p>chicle</p>
+	    </div>
+	
+</body>
+</html>

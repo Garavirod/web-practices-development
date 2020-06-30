@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+      div{
+        /*Las medias de la caja son 102 en ancho y 102 de largo porque se le suma el pixel del borde de 1px
+          La caja ocupara un espacio de 142 pixel por 100 del cotenido, 1px del borde y 40 del margin
+
+          EL PADDING: Me sirve para darle anchura a los elementos a partir del interior, por ejemplo un enlace.
+        */
+        width: 100px;
+        height: 100px;
+        border: 1px solid black; /*contorno de la caja de un pixel*/
+        margin: 20px;  /*Borde externo*/
+        padding: 10px;  /*borde interno*/
+
+
+      }
+      p{
+        padding: 2px; /*aumentara el padding que tenia a dos pixeles mas es decir a 12*/
+      }
+  </style>
+</head>
+<body>
+    <div>
+      <p>Hola Mundo</p>
+      <a href="#">Click here</a>
+    </div>
+
+</body>
+</html>

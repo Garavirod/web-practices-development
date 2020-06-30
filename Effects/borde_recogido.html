@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Borde recogido</title>
+	<style type="text/css">
+		
+
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+
+		.Ex_borde{
+			position: relative;
+		}
+
+		.Ex_borde:before{
+			content: '';
+			position: absolute;
+			border: 4px solid red;
+			top: -10px;
+			bottom: -10px;
+			left:-10px;
+			right: -10px;
+			opacity: 0;
+			-webkit-transition-duration:0.4s;
+		}
+
+		.Ex_borde:hover:before{
+			opacity: 1;
+			top: -7px;
+			bottom: -7px;
+			left:-7px;
+			right: -7px;
+			
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="Ex_borde"><p>Borde recogido</p> </div>
+	<div class="Ex_borde"><p>Borde recogido</p> </div>
+	<div class="Ex_borde"><p>Borde recogido</p> </div>
+	
+</body>
+</html>

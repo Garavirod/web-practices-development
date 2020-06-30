@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sombra externa</title>
+	<style type="text/css">
+		div{
+			font-family: 'Arial';
+			background-color:#9cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 90px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.sombra{
+			box-shadow: 0px 0px 3px black; /*desplazamientos, vertical horizontal y grado e difuminacion*/
+			-webkit-transition-duration: 0.6s;
+
+		}
+
+
+
+		.sombra:hover{
+			box-shadow: 6px 4px 10px black; /*desplazamientos, vertical horizontal y grado e difuminacion*/
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="sombra"><p>Sombra Externa</p> </div>
+
+	
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Margin&PAdding</title>
+    <style>
+     
+        div{
+            width: 50%;
+            height: 100px;
+            border: solid 1px black;
+        }
+
+        p{
+            border: 1px solid  red;
+            background: white;
+        }
+    /* Los div con la clase dimension */
+        div.dimension1{ 
+            min-width: 250px;
+            max-width: 400px;
+            margin: 20px 30px 80px 50px;
+            background: teal;
+            /* padding en todos los lados */
+            padding: 5px;
+        }
+
+         div.dimension2{ 
+            min-width: 250px;
+            max-width: 400px;
+            margin: 20px 30px 80px 50px;
+            background: teal;
+            /* padding en todos los lados */
+            padding: 15px 15px;
+        }
+
+
+         div.dimension3{ 
+            min-width: 250px;
+            max-width: 400px;
+            margin: 20px 30px 80px 50px;
+            background: teal;
+            /* padding en todos los lados */
+            padding-top: 50px;
+        }
+
+         div.dimension4{ 
+            min-width: 250px;
+            max-width: 400px;
+            margin: 20px 30px 80px 50px;
+            background: teal;
+            /* padding en todos los lados */
+            padding: 0px 0px 30px 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dimension1"><p>Hola Mundos</p></div>
+    <div class="dimension2"><p>Hola Mundos</p></div>
+    <div class="dimension3"><p>Hola Mundos</p></div>
+    <div class="dimension4"><p>Hola Mundos</p></div>
+            
+</body>
+</html>

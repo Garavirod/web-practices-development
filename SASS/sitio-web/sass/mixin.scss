@@ -1,0 +1,23 @@
+//SON UNA MEZCLA DE PROPIEDADES QUE PUEDEN TENER VARIOS SELECTROES A LA VEZ
+// PARA ESO CREMOS UNA MIXIN O FUNCION
+@mixin cuadrado($color_fondo, $ancho:200px){ //la varibale ancho por defecto tendra 200px
+    background-color:$color_fondo;
+    width: $ancho;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.cuadrado_1{
+   @include cuadrado(#C7E78B,300px);
+}
+
+.cuadrado_2{
+    @include cuadrado(#84B9EF); //como no lleva parametro por defecto pondra los 200px etstablecidos en el mixin
+   
+}
+
+.cuadrado_3{
+    @include cuadrado(#78FEE0,500px);
+
+}

@@ -1,0 +1,193 @@
+/*----------------------------------SECCION LISTADO--------------------- */
+
+nav#bar ul#lista_rank li {margin-top: 30px;}
+nav#bar ul#lista_rank li h4{font-size: 30px;}
+h5{margin: 15px; font-size: 20px;}
+
+nav{
+    position: fixed;
+    width: 9%;
+    margin-top: 10%;
+    margin-left: 10px;
+    /* background-color: rgb(139, 139, 165); */
+    z-index: 1000;;
+}
+
+
+nav#bar ul {
+    padding: 5px;
+    width: 100%;
+    /* background: rgb(197, 124, 14); */
+    list-style: none;
+}
+
+nav#bar ul li{
+    position: relative;
+    border: solid 1px #000;
+    width: 70%;
+    height: 80px;
+    margin: auto;
+    background: gold;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+
+
+
+nav#bar ul li a {
+    position: absolute;
+    font-size:25px;
+    background: rgb(81, 114, 223);
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    text-align: center;
+    padding: 32%;
+
+    
+}
+
+nav#bar ul li a span{
+    color:#fff;
+}
+
+
+nav#bar ul li a{
+    -webkit-transform: translateX(0); /*Para que no se me mueva*/
+}
+
+
+/*Hacemos uso del seudoeleemto BEFORE*/
+nav#bar ul li a:before{
+    content: ''; /*Contenido del seudoelemento , en este caso el before*/
+    -webkit-transition-duration: 0.3s;
+
+
+/*	width:30px;
+    height: 30px;*/
+
+    border-style: solid;
+    border-width: 15px 15px 0px 15px; 
+    border-color:transparent rgb(0, 0, 0) transparent transparent;
+                    
+
+    
+    position: absolute;
+    left:-10px;
+    top:50%;
+    margin-top: -15px;
+
+}
+
+nav#bar ul li a:hover:before{
+    left: -30px;
+}
+
+nav#bar ul li a:active{
+    font-size: 30px;
+    background: rgb(65, 90, 172);
+    
+}
+
+
+
+
+div.contenedor{
+    position: relative;
+    width: 90%;
+    padding: 40px;
+    margin:30px auto;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.contenedor hr.pr{
+    position: relative;
+    height: 10px;
+    background: black;
+    top: 20px;
+    margin-bottom: 50px;
+}
+
+.contenedor h3 span{margin-right: 20px; font-size: 40px;}
+.contenedor h3{font-weight:bold; font-size: 30px; }
+
+ .contenedor .lista{
+     position: relative;
+     width: 95%;
+     margin: auto;
+     /* background-color: rgb(127, 201, 230); */
+     padding: 10px;
+     
+    }
+
+.lista form ul{
+    position: relative;
+    /* background: violet; */
+    list-style: none;
+}
+
+
+.lista form ul li input[type="checkbox"]{
+    width:18px;
+    height:18px;
+}
+
+.lista form ul hr{
+    position: relative;
+    margin: 10px;
+    height: 1px;
+    background: #000;
+    border-style: none;
+}
+
+.lista ul li{
+    font-size: 25px;
+}
+    
+    
+form ul li div.datosin{
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    background: rgb(15, 182, 173);    
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+form ul li div.datosin input{
+    padding: 5px;
+    font-size: 15px;
+    margin: 2px;
+    width: 32%;
+}
+
+form  input[type="submit"]{
+    width: 250px;
+    height: 40px;
+    border-style: none;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 37%;
+    margin-top: 10px;
+    background: rgb(15, 182, 173);
+    
+}
+
+form  input[type="submit"]:hover{
+    background: rgb(37, 168, 162);
+    color:white;
+    border: solid 2px silver;
+}
+
+form input[type="submit"]:active{
+    font-weight: bold;
+    border: solid 1px silver;
+}
+

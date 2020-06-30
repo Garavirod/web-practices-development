@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balanceo</title>
+
+	<style type="text/css">
+		
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+
+
+		div{
+			animation: 1.5s balanceo 1;
+		}
+
+
+		@-webkit-keyframes balanceo{
+			20%{
+				-webkit-transform: scale(0.7) rotate(-6deg);
+			}
+
+			30%, 70%{
+				-webkit-transform: scale(1.1) rotate(6deg);
+			}
+
+			50%, 90%{
+				-webkit-transform: scale(1.1) rotate(-6deg);
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div>
+		<p>Balanceo</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,17 @@
+header {
+  background: #e2502b; }
+
+h1 {
+  color: chartreuse; }
+
+footer {
+  background: cadetblue;
+  height: 200px; }
+  footer h4 {
+    color: brown; }
+    footer h4 a {
+      color: blueviolet; }
+  footer p {
+    background: blueviolet; }
+
+/*# sourceMappingURL=estilos.css.map */

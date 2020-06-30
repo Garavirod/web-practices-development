@@ -1,0 +1,21 @@
+.fondo{
+    background: url('../imgs/1.jpg');
+    height: 100vh; /*tomara odo el alto de us conyenedor*/
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-boda_pago{
+    background: url('../imgs/boda2.jpg');
+    height: 100vh; /*tomara odo el alto de us conyenedor*/
+    background-position: center;
+    background-size: cover;
+}
+
+.registro{
+    background: url('../imgs/registro.jpg');
+    height: 100vh; /*tomara odo el alto de us conyenedor*/
+    background-position: center;
+    background-size: cover;
+    
+}

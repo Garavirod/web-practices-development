@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div *:nth-child(even){ /*odd para impares*/
+            color:red;
+        }
+
+        div *:nth-last-child(3){
+            /* DESDE EL ULTIMO EL TERCERO DE LOS HIJOS */
+            color: olivedrab;
+        }
+
+        /* DE TIPO */
+
+        div article:nth-of-type(2){
+            /* EL ELEM  DE ESE TIPO */
+            color: navy;
+        }
+
+        div a:nth-of-type(1){
+            /* EL ELEM 1 DE ESE TIPO */
+            background-color: mediumturquoise;
+        }
+
+        div p:first-of-type{
+            /* EL PRIMERO DE ESE TIPO */
+            color: rgb(5, 195, 253);
+        }
+
+        div a:only-of-type{
+            /* SOLO LOS DE ESE TIPO, EL ÚNICO EXISTENTE */
+            background-color: lime;
+        }
+
+        div div:empty{
+            width: 10px;
+            height: 10px;
+            background: lightsalmon;
+        }
+
+
+        .los_not div:not(.RGA){
+            font-size: 30px;
+        }
+
+
+        .los_not div:not(a){
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Mensaje1/9</p>
+        <p>Mensaje2/9</p>
+        <p>Mensaje3/9</p>
+        <p>Mensaje4/9</p>
+        <p>Mensaje5/9</p>
+        <a href="#">RGA</a>
+        <a href="#">DFG</a>
+        <article>article7/9</article>
+        <article>article8/9</article>
+        <article>article9/9</article>
+        <div></div><br>
+        <div></div><br>
+        <div></div>
+
+        <div class="los_not">
+            <div>texto1</div>
+            <div class="RGA">texto2</div>
+            <div>texto3</div>
+            <div>texto4</div>
+            <a href="#">encalce1</a>
+            <a href="#">encalce2</a>
+            <a href="#">encalce3</a>
+        </div>
+    </div>
+</body>
+</html>

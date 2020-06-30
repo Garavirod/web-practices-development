@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        /* LOS DIPLAY VIENEN POR DEFECTO EN BLOQUE ES DECIR BLOCK */
+        /* ---------------------------------------------------------------------------------------------------------- 
+            DISPLAY INLINE-BLOCK
+                OCUPAN SOLO EL ESPACIO DEL TEXTO Y SE ALINEAN UNO TRAS DE OTRO O DEBAJO DEL OTRO SEGUN EL TAMAÑO E LA VENTANA
+                PERO SE COMPORTAN TODAS COMO UNA LIENA DISTINTA,
+        */
+        ._1 p{
+            border: 2px solid black;
+            background: chartreuse;
+            display: inline-block
+        }
+
+           /* ---------------------------------------------------------------------------------------------------------- 
+            DISPLAY INLINE
+                OCUPAN SOLO EL ESPACIO DEL TEXTO Y SE ALINEAN UNO TRAS DE OTRO O DEBAJO DEL OTRO SEGUN EL TAMAÑO E LA VENTANA
+                SIN EMABRGO A DIRENECIA DE INLINE-BLOCK SE COMPORTAN COMO SI FUERAN UNA SOLA LINEA ES DECIR TODO ES UNO SOLO
+        */
+
+        ._2 p{
+            border: 2px solid black;
+            background: cornflowerblue;
+            display: inline;
+        }
+        
+         /* ---------------------------------------------------------------------------------------------------------- 
+            DISPLAY NONE
+               SE UTILIZAN EN EL REPONSIVE DEGIN Y SIRVEN PARA OCULTAR LOS ELEMENTOS, NO LOS HACE VISIBLES, SE LES APLICA A 
+               UNO A MUCHOS ELEMENTOS
+        */
+        
+        ._3 p{
+            border: 2px solid black;
+            background: orchid;
+            display: inline-block;
+        }
+
+         p#third {
+           display: none;
+        }
+
+        
+    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="_1">
+        <p>Mensaje de texto</p>
+        <p>Mensaje de texto</p>
+        <p>Mensaje de texto</p>
+        <p>Mensaje de texto</p>
+        <p>Mensaje de texto</p>
+    </div>
+
+
+    <div class="_2">
+            <p>Mensaje de texto</p>
+            <p>Mensaje de texto</p>
+            <p>Mensaje de texto</p>
+            <p>Mensaje de texto</p>
+            <p>Mensaje de texto</p>
+    </div>
+
+   <div class="_3">
+       <p>Mensaje #1</p>
+       <p>Mensaje #2</p>
+       <p id="third">Mensaje #3</p>
+       <p>Mensaje #4</p>
+       <p>Mensaje #5</p>
+   </div>
+</body>
+</html>

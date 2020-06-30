@@ -1,0 +1,33 @@
+//Puesto que header importa el archivo variables ya no lo agrego aqui
+@import "header";
+h1{
+    color: chartreuse;
+}
+
+// ANIDAMIENTO DE ELEMENTOS:
+//     PINTA EL FOOTER DE UN COLOR
+//     AHORA LOS H4 DENTRO DEL FOOTER DE OTRO COLOR
+//     AHORA LOS a ENDTRO DEL H4 DE OTRO COLOR
+footer{
+    background: cadetblue;
+    h4{
+        color: brown;
+        a{
+            color: blueviolet;
+        }
+    }
+
+    p{
+        background: $coloruno;
+    }
+
+    height: 200px;
+}
+
+// VARIABLES
+//       SE DEFINNEN HASTA RRIBA DEL ARCHIVO
+//       GURDAN ESTILOS, COLORES ENTRE OTRAS COSAS
+//       $nomvar:propiedad
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Postion,Relative,Absolut and fixed</title>
+	<style>
+		
+		
+		.padre{
+
+			width: 250px;
+			height: 250px;
+			margin: 20px;
+			background: orange;
+			
+			
+		}
+
+		.hijo1{
+			width: 50px;
+			height: 50px;
+			background: aqua;
+
+			/*ALINEADOS*/
+
+			/*vertical-align: top;*/
+
+			/*POSTION STATIC*/
+
+			/*position: static; Se quedará fija la caja y no hará caso a los top, buttom
+			buttom:10px;*/
+		
+			/*POSTION RELATIVE*/
+/*
+			position: relative; postion relative si obedecera los top los butom y demás
+			top:200px;
+*/
+
+			/*POSTION ABSOLUT*/
+
+
+			position: absolute;
+			top: 0px; /*Se va de acuerdo con el POSTION  del padre más cercano en este caso el body porque el div padre no tine position*/
+			/*el top cero sera con respecto al padre más cercao que tenga un position*/
+
+
+			/*POSITION FIXED */
+
+			/*El posotion fixed simpre dependerá del body, no importa el padrer mas cercano*/
+
+		}
+
+
+		.hijo2{
+			width: 100px;
+			height: 100px;
+			background: purple;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="padre">
+		
+		<div class="hijo1"></div>
+		<div class="hijo2"></div>
+
+	</div>
+	
+</body>
+</html>

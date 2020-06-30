@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keyframe</title>
+	<style type="text/css">
+		
+		
+	div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+
+		.caja:hover{
+			-webkit-animation: 5s cambia_color 1; /*donde cambia color es el nombre de la funcion*/
+
+		}
+
+		/*Funcion que ejecutará el keyframe*/
+
+		@-webkit-keyframes cambia_color{ /*a menos que se indique lo contraraio el 0% y 100% sera su estado orginal*/
+			0% ,70%{
+				background: #4FD40D;
+			}
+
+			50%{
+				
+				background: gold; /*al 50% del tiempo de la animacion cmabiara el color*/
+				height: 200px;
+				
+			}
+		}
+
+
+		/*animation-name:
+			indica el no,bre del keyframe que tendrá
+		animation-duration:
+			tiempo total de la animacion
+		animation-interation-count:
+			veces qeu se repetirá la animación
+		animatio-delay:
+			retardo con el comezará  aplicarse			
+*/
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="caja">
+		<p>KeyFrame</p>
+	</div>
+	
+</body>
+</html>

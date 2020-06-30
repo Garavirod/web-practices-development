@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bordes en menús</title>
+	<style type="text/css">
+		
+		body{
+			background-color: #711F1F; 
+			font-family: 'Courier';
+		}
+
+
+		nav{
+
+			background: #ccc;
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			text-align: right;
+		}
+
+		nav li{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+
+
+		li{
+			display:inline-block;
+			margin:7px -2px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+			font-weight: bolder;
+			border: 1px solid #1DA912;
+			padding: 5px 10px;
+		}
+
+
+		/*Accedemosa cada uno de los eleemntos del li*/
+
+		li:nth-of-type(1) a:focus{/*referncia al primer li*/
+
+		border-bottom: 3px solid #321AC1;
+			
+
+		}
+
+
+		li:nth-of-type(2) a:focus{/*referncia al primer li*/
+
+		border-bottom: 3px solid #321AC1;
+			
+
+		}
+
+
+		li:nth-of-type(3) a:focus{/*referncia al primer li*/
+
+		border-bottom: 3px solid #321AC1;
+			
+
+		}
+
+		li:nth-of-type(4) a:focus{/*referncia al primer li*/
+
+		border-bottom: 3px solid #321AC1;
+			
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Inicio</a></li>
+		</ul>
+	</nav>
+	
+</body>
+</html>

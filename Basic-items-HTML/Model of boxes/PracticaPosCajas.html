@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poscicionamiento de cajas</title>
+    <style>
+
+
+        div.padre{
+            background-color: salmon;
+            width: 90%;
+            height: 550px;
+            margin:5% auto;
+            position: relative;
+        }
+
+        div.hijo1{
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            position: absolute;
+            top: 0px;
+        }
+
+        div.hijo1 div.nieto1{
+            background-color: saddlebrown;
+            width: 50px;
+            height: 50px;
+            margin: 25% auto;
+            position: relative;
+        }
+
+        div.hijo2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color :darkgoldenrod;
+            top: 0px;
+            right: 0px;
+        }
+
+        div.hijo2 div.nieto2{
+            background-color:violet;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin: 25% auto;
+        }
+
+
+        div.hijo3{
+            background-color: steelblue;
+            width: 30%;
+            height: 50%;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+        }
+
+
+        div.hijo3 div.nieto3{
+            position: relative;
+            margin: 12% auto;
+            background-color: yellowgreen;
+            width: 180px;
+            height: 180px;
+            z-index: 100;
+        }
+
+        div.hijo3 div.nieto3 div.bisnieto{
+            position: absolute;
+            background-color: palevioletred;
+            width: 100px;
+            height: 100px;
+            top: 25%;
+            left: 23%;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo1">
+            <div class="nieto1"></div>
+        </div>
+        <div class="hijo2">
+            <div class="nieto2"></div>
+        </div>
+        <div class="hijo3">
+            <div class="nieto3">
+                    <div class="bisnieto"></div>
+            </div>
+        </div>
+        <div class="hijo4">
+            <div class="nieto3"></div>
+        </div>
+        <div class="hijo5">
+            <div class="nieto4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+<script src="../../code/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+		<script type="text/javascript">
+
+Highcharts.chart('container', {
+
+    title: {
+        text: 'Logarithmic axis demo'
+    },
+
+    xAxis: {
+        categories: [10,20,30],
+        tickInterval: 1
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        minorTickInterval: 0.1
+    },
+
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br />',
+        pointFormat: 'x = {point.x}, y = {point.y}'
+    },
+
+    series: [{
+        name: 'Ingreso Total',
+            data: [2,6,]
+            
+             }, {
+                 name: 'Costos Fijos',
+                 data: [3,9,]
+            }, {
+                name: 'Costo Total',
+                data: [10,30,]
+    }],
+
+    
+});
+		</script>
+	</body>
+</html>

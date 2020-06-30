@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo elementos</title>
+    <style>
+        /* LOS PSEUFO ELEMENTOS SON AQUELLOS QUE ESTÁN PRESENTES EN CUALQUIER ELEM DEL HTML Y QUE SE PUEDEN UTILIZAR  
+            EXISTEN DOS:
+            before
+            after
+
+            No son seleccionables por el usuario, no son codigo html, simepre acompañan al alemento, son parte del estilo
+            los pseudo elementos sirvwn para darle unicamente aspecto visula al elemento, 
+        */
+        p{
+            position: relative;
+            color:orchid;
+        }
+        /* CONTROLAMOS EL PSEUDO ELEMENTO DEL PARRAFO */
+        p:before{
+            content: "-";
+            /* Par psisionar un pseudoeleemnto hay que poner una POSITION para inidcarle con respecto a que se va a posicionar 
+                y tambien a su padre.
+            */
+            position: relative;            
+            top:50px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est maiores dolore ipsum doloribus suscipit veritatis cum quisquam? 
+    Autem expedita, voluptate quidem aspernatur facilis eveniet nulla accusamus tempore beatae suscipit!</p>
+</body>
+</html>

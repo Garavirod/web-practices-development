@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sombra atrás</title>
+	<style type="text/css">
+		div{
+			font-family: 'Arial';
+			background-color:#9cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 90px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.sombra{
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.2); /*derecha abajo */
+			-webkit-transition-duration: 0.5s;
+		}
+
+		.sombra:hover{
+			box-shadow: 0px 0px 8px rgba(0,0,0,1);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	<div class="sombra"><p>Sombra Difuminada</p> </div>
+	
+</body>
+</html>

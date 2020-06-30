@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Caida</title>
+	<style type="text/css">
+		
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 30px 50px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			vertical-align: ;
+		}
+
+
+
+		.caja1{
+			-webkit-animation: 1s inrotativo 1; 
+			-webkit-transform-origin: center; //Le decimos que el origen del mov del div sera arriba de lado izquirdo
+		}
+
+		.caja2{
+			-webkit-animation: 1.5s Outrotativo 1; 
+			-webkit-transform-origin: center; //Le decimos que el origen del mov del div sera arriba de lado izquirdo
+		}
+
+		@-webkit-keyframes inrotativo{
+			
+			0%{
+				opacity: 0;
+			-webkit-transform: translateX(-200%) rotate(360deg); //aqui me indica que el 100% pero de su tamaño
+
+			}
+
+			
+		}
+
+		@-webkit-keyframes Outrotativo{
+
+			100%{
+			opacity: 0;
+			-webkit-transform: translateX(200%) rotate(360deg);
+
+			}
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="caja1">
+	<p>Inrotativo</p>
+</div>
+
+<div class="caja2">
+	<p>Outrotativo</p>
+</div>
+	
+</body>
+</html>

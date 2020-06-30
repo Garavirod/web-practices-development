@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Camuflajes</title>
+	<style type="text/css">
+		
+
+		div{
+			font-family: 'Arial';
+			background-color:#9cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.triangulo_lateral{
+			-webkit-transform: translateX(0); /*Para que no se me mueva*/
+		}
+		
+
+		/*Hacemos uso del seudoeleemto BEFORE*/
+		.triangulo_lateral:before{
+			content: ''; /*Contenido del seudoelemento , en este caso el before*/
+			-webkit-transition-duration: 0.3s;
+
+
+		/*	width:30px;
+			height: 30px;*/
+
+			border-style: solid;
+			border-width: 15px 15px 15px 0px; 
+			border-color:transparent #9cc transparent transparent;
+							
+
+			
+			position: absolute;
+			left:0px;
+			top:50%;
+			margin-top: -15px;
+
+		}
+
+		.triangulo_lateral:hover:before{
+			left: -13px;
+		}
+
+
+		/*----------SEGUNDO TRIANGULO LATERAL----------*/
+
+		.triangulo_lateral2{
+			-webkit-transform: translateX(0); /*Para que no se me mueva*/
+			-webkit-transition-duration: 0.3s;
+		}
+		
+
+		/*Hacemos uso del seudoeleemto BEFORE*/
+		.triangulo_lateral2:before{
+			content: ''; /*Contenido del seudoelemento , en este caso el before*/
+			-webkit-transition-duration: 0.3s;
+
+
+		/*	width:30px;
+			height: 30px;*/
+
+			border-style: solid;
+			border-width: 0px 15px 15px 15px; /*Levógir*/
+			border-color:transparent transparent #9cc transparent; /*el aqui es opuesto al border-width es decir se asigna dextrogiro*/
+							
+
+			
+			position: absolute;
+			top:0px;
+			left:50%;
+			margin-left: -15px;
+
+		}
+
+		.triangulo_lateral2:hover:before{
+			top: -13px;
+		}
+
+		.triangulo_lateral2:hover{
+			-webkit-transform: translateY(15px);
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="triangulo_lateral">
+		<p>Triangulo lateral</p>
+	</div>
+	
+
+	<div class="triangulo_lateral2">
+		<p>Triangulo lateral</p>
+	</div>
+
+</body>
+</html>

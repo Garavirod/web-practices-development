@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /* 
+        TODAS LAS CAJAS TIENEN POR DEFCTO UNA POSCIICON ESTATICA ES DECIR SE POSICIONAN UNA SEGUIDO DE LA OTRA 
+        SON CORDEANDAS DE POSCIONAMIENTO NO TIENE NADA QUE VER CON LOS MARGINS
+
+            RIGTH
+            LEFT
+            BOTTOM
+            RIGHT
+
+
+            RELATIVE:
+
+            CON EL POSITION RELATIVE UNA DE SUS CARACTERISTICAS ES QUE AL MOVERLO SE RESPETA SU ESPACIO EN EL FLUJO
+            SUS CORDENADAS SON CON RESPECTO A SU POSCION INICIAL, ES DECIR A PARTIR DE DONDE ESTÁ.
+
+
+            ABSOLUTE:
+
+            ROMPE LA MAQUETACIÓN, SU ESPACIO SE REDUCE A CERO
+
+        
+        
+        */
+        .padre{
+            width: 250pX;
+            height: 250px;
+            margin: 25px;
+            background: orange;
+            position: relative;
+        }
+
+        .hijo1{
+            width: 50px;
+            height: 50px;
+            background: olivedrab;
+            position: absolute; /*Su padre mas cercano será el padre*/
+            bottom :0px;
+            left: 0px;
+
+        }
+
+        .hijo2{
+            width: 100px;
+            height: 100px;
+            background: rgb(86, 86, 192);
+            position: absolute;
+            top: 25%;
+            left: 30%;
+        }
+
+        /*TODOS LOS POSCIONAMIENOS ABSOLUT SE REFERENCIAN CON EL PADRE MÁS CERCANO QUE CONTENGAN EL POSCIONAMENTO 
+            RELATIVE
+            ABSOLUTE
+            FIXED
+        */
+
+        .hijo2 .nieto{
+            width: 50px;
+            height: 50px;
+            background: rgb(221, 45, 14);
+            position: absolute; /*El padre mas cercano es el hiho2*/ 
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo1"></div>
+        <div class="hijo2">
+            <div class="nieto"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+NORMALIZADORES:
+
+    CSS Navegado: primer estilo que se le aploca a una pagina
+    CSS Usuario: La personalización del usuario hacia el navegador donde se visualiza la pag web
+    CSS Diseñador: El que usa los estilos CSS
+    
+Para no entrar en colisiones con las dos CSS anteriores al diseñador, se utilizan los normalizadores. para no arrastrar las caracteristicas
+de las hojas de estilo principales.
+
+
+NORMALIZE: Es un normalizador de distribucion gratuita que prepara los navegadores para noentrar en 
+conflicto con las hojas de estilos por defecto del navegador
+
+El oreden de importar el archivo normalize.css debe ir primero.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+COMPATIBILIZAR NAVEGADORES:
+
+No todas la propiedades se hacen igual para distintos navegadores de versiones anteriores
+
+MODERNIZER: cuando se usen versiones anteriorres al navegador se usa este archivo para que terminen recrenadi en mismo efecto.
+se importa al doc con una eiqueta script porque es js
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CENTRAR CAJAS CON POSISIONAMIENTO ABSOLUTO
+margin-left:auto;
+margin-right:auto;
+left:0;
+right:0;
+
+EL PASDRE DE LA CAJA DEBE TENER UN POSICIONAMIENTO RELATIVO
+
+---------------------------------------------------------------------------------------------------------------------------------------------

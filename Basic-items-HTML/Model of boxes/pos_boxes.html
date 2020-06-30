@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style media="screen">
+    div{
+      width: 100px;
+      height: 100px;
+      background: maroon;
+      color: #fff;
+      font-size:30px;
+      
+    }
+
+
+    .box2{
+        position: relative; /*Desde su poscion original*/
+        top: 0px;
+        left: 200px;
+    }
+
+    .Dad_box{
+      position: relative;
+      width: 50%;
+      height: 300px;
+      background: #000;
+      top: 20px; /*A partir de su orignen*/
+    }
+    .box_son{
+      position: absolute; /*La caja hijo su referencia será la caja padre Dad_box*/
+      width: 80%;
+      margin: 10%;
+      height: 60%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2>#1</h2>
+  </div>
+  <div class="box2">
+    <h2>#2</h2>
+  </div>
+  <div class="Dad_box">
+    <div class="box_son">
+      <h2>#3</h2>
+    </div>
+  </div>
+  <div>
+    <h2>#4</h2>
+  </div>
+  <div>
+    <h2>#5</h2>
+  </div>
+  <div>
+    <h2>#6</h2>
+  </div>
+  <div>
+    <h2>#7</h2>
+  </div>
+  <div>
+    <h2>#8</h2>
+  </div>
+  <div>
+    <h2>#9</h2>
+  </div>
+  <div>
+    <h2>#10</h2>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* -----------------------------ETILOS GENERALES----------------------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background: url('../imgs/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Josefin Slab', serif;
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{background: darkcyan;}
+header{width: 100%;}
+header nav{
+    width: 90%;
+    /* hacia los lados va a ser automatico el margen y hacia arriba será de 20 */
+    margin: 20px auto; 
+    max-width: 1000px;
+    background: coral;
+}
+
+.meunu_bar{display: none;}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li{float: left;}
+
+header nav ul li a{
+    color: #fff;
+    padding: 20px;
+    display:block;
+    text-decoration: none;
+}
+
+header nav ul li span{margin-right: 20px;}
+
+header nav ul li a:hover{background: #037e8c;}
+.menu_bar:active{background: darkslategrey;}
+section{padding: 20px;}
+
+/* cuando la pantalla llegue a los 800 px se realizarán las sig caracteristicas */
+@media screen and (max-width: 800px){
+    header nav{
+        
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        /* reiniciamos el margen a 0 porque la inicio era automatico */
+        margin: 0;
+        position: fixed;
+    }
+
+    header nav ul li{
+        /* Abarcará todo lo que pueda de ancho */
+        display: block;
+        float: none;
+        border-bottom: 1px solid  rgba(255, 255, 255, 0.3);
+    }
+
+
+    .menu_bar{
+        display: block;
+        width:100%;
+        background: #037e8c;
+    }
+
+
+    .menu_bar .bt_menu{
+        /* Para ponder manejra los margenes internos  */
+        display: block;
+        padding: 20px;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold; 
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+}

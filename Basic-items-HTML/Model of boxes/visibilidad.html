@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+/*     
+    
+    Z-INDEX:
+    Es la propiedad que me habla de la profuncidad de un elemento en eje Z, es decir le decimos a un elemento 
+    que se ponga en frente de otro y otro n frente del otro y asu sucesivamente, es decir que vaya ganando mas visibilidad 
+    en el eje Z, es decir UN LEMENTO MAS AL FRENTE QUE OTRO, SIEMPRE SE ESPECIFICA CON UN POSITION DE LO CAONTRARIO NO FUNCIONA
+    Podria decirce que asigna prioridades, el mayor numero se irá hasta el frente del eje z, 
+
+    OVERFLOW
+    Es una propiedad que me permite establecer que todo qlo que se saga del padre, no lo muestres
+
+
+    VISIBILITY:
+    Oculta un elelemnto sin que afcte el flujo de posisionamiento del resto
+
+
+    TRANSPARENCIA:
+    Me sirve para asignarle opcaidad a un elemento
+    
+
+
+
+ */
+        .padre{
+            width: 250px;
+            height: 250px;
+            background: olive;
+            position: relative;
+            overflow: hidden; /*Quitar para ver el contenido*/
+            margin: 50px;
+        }
+
+        .hijo1, .hijo2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: -60px;
+        }
+
+        .hijo1{background: rebeccapurple;
+            z-index: 1;
+        }
+        .hijo2{background-color: palegreen;
+            z-index: 2; /*La prioridad mayor es 2 entonces sera quien se vea mas al frente en l eje */
+        }
+
+        #oculto{
+            visibility: hidden;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo1"></div>
+        <div class="hijo2" id="oculto"></div>
+    </div>
+</body>
+</html>

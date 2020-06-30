@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rebote</title>
+	<style type="text/css">
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 30px 50px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			vertical-align: ;
+		}
+
+		div{
+			-webkit-animation: 2s rebote 1;
+		}
+
+		@-webkit-keyframes rebote{
+			20%, 50%, 80%{
+				-webkit-transform: translateY(0px);
+			}
+
+			30%{
+				-webkit-transform: translateY(-45px);
+			}
+
+			60%{
+				-webkit-transform: translateY(-25px);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<p>Rebote</p>
+	</div>
+</body>
+</html>

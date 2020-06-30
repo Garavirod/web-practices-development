@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap410/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .borde{border: solid 1px; text-align: center; height:50px;}
+        .color1{background:skyblue;}
+        .color2{background:darkmagenta;}
+        .color3{background:yellowgreen; height: 500px;}
+        .color4{background:teal;}
+    </style>
+</head>
+<body>
+    <!-- Vertical alignments -->
+    <div class="container bg-success">
+        <div class="container bg-info">
+            <div class="row color3 align-items-end">
+                <div class="borde color2 col-md-1 align-self-center">1</div>
+                <div class="borde color2 col-md-1">2</div>
+                <div class="borde color2 col-md-1 align-self-center">3</div>
+                <div class="borde color2 col-md-1">4</div>
+                <div class="borde color2 col-md-1 align-self-center">5</div>
+            </div>
+        </div>
+    </div>
+    <!--Horizontal alignments-->
+    <div class="container bg-danger border">
+            <div class="container bg-info">
+                <div class="row color3 align-items-center justify-content-around">
+                    <div class="borde color2 col-md-1">1</div>
+                    <div class="borde color2 col-md-1">2</div>
+                    <div class="borde color2 col-md-1">3</div>
+                    <div class="borde color2 col-md-1">4</div>
+                    <!-- We order the ubication's div using "order-first/second/third/last"-->
+                    <div class="borde color2 order-first col-md-1">5</div>
+                </div>
+            </div>
+        </div>
+    <!-- Offset, we left spaces depending number of col-1/2/..12 offset-md-3 -->
+    <div class="container bg-danger border">
+            <div class="container bg-info">
+                <div class="row color3 align-items-center justify-content-around">
+                    <div class="borde color2 col">1 <!--We can put col-md-n to convert in a column of dimension n in that DIV -->
+                        <div class="row">
+                            <div class="col border color4">sub1</div>
+                            <div class="col border color4">sub2</div>
+                            <div class="col border color4">sub3</div>
+                        </div>
+                    </div>
+                    <div class="borde color2 col-md-1">2</div>
+                    <div class="borde color2 col-md-1">3</div>
+                    <div class="borde color2 col-md-1 offset-md-3">4</div>
+                    <div class="borde color2 col-md-1">5</div>
+                    <div class="borde color2 col-md-1">6
+                        <div class="row">
+                            <div class="col border color1">sub1</div>
+                            <div class="col border color1">sub2</div>
+                            <div class="col border color1">sub3</div>
+                            <div class="col border color1">sub4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

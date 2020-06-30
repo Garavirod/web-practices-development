@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Caida</title>
+	<style type="text/css">
+		
+		div{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 50px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		div{
+			-webkit-animation: 1.5s caida 1; 
+			-webkit-transform-origin: top left; //Le decimos que el origen del mov del div sera arriba de lado izquirdo
+		}
+
+
+		@-webkit-keyframes caida{
+			20%, 60%{
+				-webkit-transform: rotate(80deg);
+			}
+
+			40%{
+				-webkit-transform: rotate(60deg);
+			}
+
+			80%{
+				opacity: 1;
+				-webkit-transform: rotate(60deg);
+
+			}
+
+			90%{
+				-webkit-transform: translateY(900px);
+				
+			}
+
+			100%{
+				opacity: 0;
+			}
+			
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div>
+	<p>Caida</p>
+</div>
+	
+</body>
+</html>

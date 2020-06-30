@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expancion de borde</title>
+	<style type="text/css">
+		
+
+		.Ex_borde{
+			font-family: 'Arial';
+			background-color: #8cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 80px;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+
+		.Ex_borde{
+			position: relative;
+		}
+
+		.Ex_borde:before{
+			content: '';
+			position: absolute;
+			border: 4px solid red;
+			top: 0px;
+			bottom: 0px;
+			left:0px;
+			right: 0px;
+			-webkit-transition-duration:0.4s;
+		}
+
+		.Ex_borde:hover:before{
+
+			top: -8px;
+			bottom: -8px;
+			left:-8px;
+			right: -8px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="Ex_borde"><p>Expancion de borde</p> </div>
+	<div class="Ex_borde"><p>Expancion de borde</p> </div>
+	<div class="Ex_borde"><p>Expancion de borde</p> </div>
+	<input type="submit" name="envia" class="Ex_borde" value="Volver">
+	
+</body>
+</html>

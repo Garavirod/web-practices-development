@@ -1,0 +1,7 @@
+para enlazar rchivos en sass
+
+1) Estar en la ruta del royecto web (ruta raiz)
+2) saas --watch saas:css
+
+-- watch//Para no refrescar la agina a cada rato y guradando los cambios a cada rato
+:css //Indica a aque carpeta se irán los archivos compilados 

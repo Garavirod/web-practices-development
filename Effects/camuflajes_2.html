@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Camuflajes dos</title>
+	<style type="text/css">
+		
+
+		div{
+			font-family: 'Arial';
+			background-color:#9cc;
+			margin: 10px 10px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 15px 30px;
+			width: 90px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+
+		.esquina_pagina{
+			-webkit-transform: translateX(0);
+		}
+
+		.esquina_pagina:before{
+
+			content: '';
+			position: absolute;
+			left: 0px;
+			bottom: 0px; 
+			width:0px;
+			height:0px;
+			background:-webkit-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+			background:-o-linear-gradient();
+			background:linear-gradient();
+			-webkit-transition-duration: .5s;
+			
+		}
+
+
+		.esquina_pagina:hover:before{
+			
+			width:35px;
+			height:35px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="esquina_pagina">Esquina de pagina</div>
+</body>
+</html>

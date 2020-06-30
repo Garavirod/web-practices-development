@@ -1,0 +1,132 @@
+/*---------------------SECCION DEL INDEX------------------- */
+
+div.index-content{
+    position: relative;
+    width: 90%;
+    padding: 40px;
+    margin:30px auto auto auto;
+    background-color: rgb(255, 255, 255);
+}
+
+div.index-content article {font-size: 20px;}
+
+nav{
+    width: 100%;
+    /* background: rgb(112, 93, 129); */
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    width: 50%;
+    /* border: solid 1px; */
+    float: left;
+    text-align: center;
+}
+
+nav ul li a{
+    padding: 0.5% 20%;
+    background: rgb(63, 148, 148);        
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 6px;
+    color:#fff;
+    
+}
+
+nav ul li a:hover{
+    background: rgb(64, 192, 192);
+    /* font-size: 26px; */
+    font-weight: bold;
+    
+}
+
+.index-content hr{
+    position: relative;
+    height: 10px;
+    background: black;
+    top: 25px;
+}
+
+section.antecedentes{
+    position: relative;
+    /* background-color: rgb(240, 240, 172); */
+    width: 95%;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+article{
+    text-align: justify;
+}
+
+article ul li {margin: 20px;}
+article h3{margin-top:15px;}
+
+    footer{
+        position: relative;
+        width: 90%;
+        bottom: 0px;
+        margin:auto auto 30px auto;
+    }
+
+footer p.intft{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background:#000;
+    color: white
+}
+    footer div.autores{
+        position: relative;
+        /* background-color: rgb(122, 235, 150); */
+        float: left;
+        width: 50%;
+        height: 150px;
+    }
+
+    #_5{width: 100%;}
+
+    .autores div{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    float: left;
+    padding: 20px; 
+
+    }
+
+    div.info div.sec_inf{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        /* background:darkgoldenrod; */
+        border-radius: 5px;
+    }
+
+.foto  img{
+    display: block;
+    margin: auto;
+    border-radius:50%; 
+    background: slategray;
+}
+
+.info h4{
+    text-align: center;
+    font-weight: bold;
+}
+
+.info p{text-align: center;}
+
+    
+
+
+
+

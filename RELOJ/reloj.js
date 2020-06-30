@@ -35,9 +35,35 @@
 
         Paño.textContent = año;
 
+        if (horas >= 12) {
+            horas = horas - 12;
+            ampm = 'PM';
+        } else {
+            ampm = 'AM';
+        }
+
+        if (horas == 0) {
+            horas = 12;
+        }
+
+        if (minutos < 10) {
+            minutos = "0" + minutos;
+        }
+
+        if (segundos < 10) {
+            segundos = "0" + segundos;
+        }
+
+        Phoras.textContent = horas;
+        P_AMPM.textContent = ampm;
+        Pminutos.textContent = minutos;
+        Psegundos.textContent = segundos;
+
     };
 
     actualiza_hora();
+
+    var intervalo = setInterval(actualiza_hora, 1000)
 
 
 }())

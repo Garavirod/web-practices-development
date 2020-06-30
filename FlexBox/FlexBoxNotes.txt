@@ -1,0 +1,11 @@
+For using Flexbox we need a div tag 'conatiner', inside it you could set all box 
+you need using flex box property, this ways you will avoid to use float left 
+property.
+
+The conainer always have the property 'display flex' and does the same thing like it 
+you had applyed 'float left'
+
+Flex direction: 
+    row - This sets the boxes in a row at the left side from the first box 1|2|3|4
+    row-reverse - This sets the boxes in a row at the rigt side from the first box 4|3|2|1
+Flex wrap : this respects the size of the box setting the boxes in other line and other column

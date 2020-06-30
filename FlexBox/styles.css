@@ -56,4 +56,86 @@
     background-color: black;
     text-align: center;
     font-size: 30px;
+    /*Alinea los elementos hijo haciendo que ocupen el 100% de su ancho lo llena*/
+    /* flex-grow: 1; */
+    /*this respect the width*/
+    /* flex-shrink: 0; */
+    /* This is the same that apply shrink 0 and grow 1 */
+    flex: 1 1 auto;
+}
+
+.container2 {
+    background-color: rgb(100, 237, 118);
+    /*tomara odo el alto de us conyenedor*/
+    height: 100vh;
+    /* FLEX BOX */
+    display: flex;
+    /* FLEX DIRECTION */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: inherit; */
+    /* FLEX-WRAP */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* 
+        JUSTIFY-CONENT 
+
+        Axis X
+    */
+    /* justify-content: flex-start; */
+    justify-content: flex-end;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* 
+        ALIGN-ITEMS 
+        Align in 'Y' axis
+    */
+    align-items: flex-start;
+    /* align-items: stretch; */
+    /*Just if you delet the hiegit of the child*/
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* align-items: flex-start; */
+    /* 
+        ALIGN CONTENT 
+        Align two lines whethere you want in Y axis 'Just two line'
+    */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+}
+
+.child2 {
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    color: chartreuse;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    /*Alinea los elementos hijo haciendo que ocupen el 100% de su ancho lo llena*/
+    /* flex-grow: 1; */
+    /*this respect the width*/
+    /* flex-shrink: 0; */
+    /* This is the same that apply shrink 0 and grow 1 */
+    flex: 1 1 auto;
+}
+
+.bs {
+    align-self: stretch;
+    /* align-self: center; */
+    height: auto;
+}
+
+.bs2 {
+    align-self: center;
+}
+
+.bs3 {
+    align-self: flex-end;
 }

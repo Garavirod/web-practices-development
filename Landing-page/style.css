@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    animation: moveLeft 1s ease-in;
+}
+
+header {
+    background: #C6FFDD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+img#imgHeader {
+    display: block;
+    height: 450px;
+    /* To avoid the image miss quality */
+    object-fit: cover;
+    width: auto;
+    animation: moveUp 1s ease-in;
+}
+
+.texts {
+    width: 50%;
+    color: aliceblue;
+}
+
+.texts h1 {
+    font-size: 80px;
+    animation: moveRigth 1s ease-in;
+}
+
+.texts h2 {
+    animation: moveLeft 1s ease-in;
+}
+
+.texts a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0px;
+    animation: moveUp 1s ease-in;
+}
+
+.texts a:hover {
+    background-color: #fff;
+    color: #f7797d;
+}
+
+.texts a:active {
+    border: 1px solid rgb(114, 231, 231);
+}
+
+
+/* WAVE */
+
+.wave {
+    background: #C6FFDD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* ANIMATIONS */
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveRigth {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

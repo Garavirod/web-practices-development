@@ -29,11 +29,11 @@ nav a {
 }
 
 header {
-    background: #C6FFDD;
+    background: #000046;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    background: linear-gradient(to right, #1CB5E0, #000046);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
     padding: 48px;
@@ -99,11 +99,12 @@ img#imgHeader {
 /* WAVE */
 
 .wave {
-    background: #C6FFDD;
+    width: 100%;
+    background: #000046;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    background: linear-gradient(to right, #1CB5E0, #000046);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -157,11 +158,11 @@ img#imgHeader {
     width: 100%;
     flex-direction: column;
     transition: all 1s ease;
-    background: #DAD299;
+    background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B0DAB9, #DAD299);
+    background: linear-gradient(to right, #004e92, #000428);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -171,4 +172,115 @@ img#imgHeader {
 
 .two {
     clip-path: circle(150% at 0% 0%);
+}
+
+
+/* Responisve design */
+
+
+/* When the 1000px be broken */
+
+@media screen and (max-width:1000px) {
+    img#imgHeader {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    img#imgHeader {
+        height: 250px;
+    }
+    .texts h1 {
+        font-size: 40px;
+        /* animation: moveRigth 1s ease-in; */
+    }
+    .texts h2 {
+        font-size: 17px;
+    }
+    .linkers a {
+        /* background: sandybrown; */
+        width: 95%;
+        height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+        text-shadow: 200;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    img#imgHeader {
+        height: 150px;
+    }
+    .texts h1 {
+        font-size: 30px;
+        /* animation: moveRigth 1s ease-in; */
+    }
+    .texts h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    img#imgHeader {
+        height: 150px;
+    }
+    .texts h1 {
+        font-size: 20px;
+        /* animation: moveRigth 1s ease-in; */
+    }
+    .texts h2 {
+        font-size: 10px;
+    }
+    .texts a {
+        /* display: inline-block;
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+        margin-top: 30px;
+        border: 1px solid #fff; */
+        width: 100px;
+        /* border-radius: 3px;
+        text-align: center;
+        padding: 10px 0px;
+        animation: moveUp 1s ease-in; */
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .container>* {
+        margin: 10px;
+    }
+    img#imgHeader {
+        height: 200px;
+    }
+    .texts h1 {
+        text-align: center;
+        font-size: 25px;
+        /* animation: moveRigth 1s ease-in; */
+    }
+    .texts h2 {
+        font-size: 10px;
+    }
+    .texts a {
+        /* display: inline-block;
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+        margin-top: 30px;
+        border: 1px solid #fff; */
+        width: 100px;
+        /* border-radius: 3px;
+        text-align: center;
+        padding: 10px 0px;
+        animation: moveUp 1s ease-in; */
+        font-size: 10px;
+    }
 }

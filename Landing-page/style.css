@@ -12,12 +12,19 @@ nav {
     position: fixed;
     top: 20px;
     left: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 nav a {
-    text-decoration: none;
     color: aliceblue;
-    display: inline-block;
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+.icon {
+    display: block;
+    z-index: 10000;
     animation: moveLeft 1s ease-in;
 }
 
@@ -134,4 +141,34 @@ img#imgHeader {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+
+/* CIRCLE */
+
+.linkers {
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #DAD299;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B0DAB9, #DAD299);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.one {
+    clip-path: circle(0% at 0% 0%);
+}
+
+.two {
+    clip-path: circle(150% at 0% 0%);
 }

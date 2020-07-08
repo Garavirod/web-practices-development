@@ -1,3 +1,7 @@
+body {
+    background-color: aliceblue;
+}
+
 .item {
     height: 50px;
     width: 50px;

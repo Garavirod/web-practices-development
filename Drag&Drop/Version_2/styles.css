@@ -1,0 +1,45 @@
+body {
+    background-color: crimson;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty {
+    /* display: inline-block; */
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: solid 3px #000;
+    background-color: aliceblue;
+}
+
+.fill {
+    background-image: url('http://source.unsplash.com/random/150X150');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 5px;
+    top: 5px;
+    cursor: grab;
+}
+
+.hold {
+    border: solid 4px rgb(36, 228, 154);
+}
+
+.hovered {
+    background-color: aqua;
+    border-style: dashed;
+}
+
+.invisible {
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}

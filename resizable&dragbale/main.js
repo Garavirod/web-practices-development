@@ -1,8 +1,20 @@
 const el = document.querySelector('.item');
 let isResizing = false;
-el.addEventListener('mousedown', mouseDown);
+let isActiveResizers = false;
+el.addEventListener('mousedown', mouseDownDrag);
+el.addEventListener('click', activeResizers);
 
-function mouseDown(e) {
+
+// This function actives the resizers with a click.
+function activeResizers(e) {
+    let res = e.target.querySelectorAll(".resizer");
+    let isVisible = (!isActiveResizers) ? "visible" : "hidden";
+    res.forEach(r => { r.style.visibility = isVisible; });
+    isActiveResizers = !isActiveResizers;
+}
+
+// This function allows to move te item it make te item "Dragable"
+function mouseDownDrag(e) {
 
     window.addEventListener('mousemove', mouseMove);
     window.addEventListener('mouseup', mouseUp);
@@ -35,9 +47,8 @@ function mouseDown(e) {
 const resizers = document.querySelectorAll('.resizer');
 let currentResizer;
 
-function mouseDown2(e) {
+function mouseDownResize(e) {
     isResizing = true;
-
     currentResizer = e.target;
     let prevX = e.clientX;
     let prevY = e.clientY;
@@ -77,5 +88,5 @@ function mouseDown2(e) {
 
 
 resizers.forEach(r => {
-    r.addEventListener('mousedown', mouseDown2);
+    r.addEventListener('mousedown', mouseDownResize);
 });

@@ -1,4 +1,4 @@
-const el = document.querySelector('.item');
+const el = document.querySelector('.draggable');
 let isResizing = false;
 let isActiveResizers = false;
 el.addEventListener('mousedown', mouseDownDrag);

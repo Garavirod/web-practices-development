@@ -1,8 +1,8 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(88, 113, 136);
 }
 
-.item {
+.draggable {
     height: 100px;
     width: 150px;
     position: absolute;
@@ -11,7 +11,7 @@ body {
     background-color: darkcyan;
 }
 
-.item:hover {
+.draggable:hover {
     cursor: grab;
 }
 

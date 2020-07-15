@@ -4,17 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
     <title>Document</title>
-    <style>
-        body {
-            background-color: darkgray;
-        }
-    </style>
 </head>
 
 <body>
-    <iframe id="inlineFrameExample" title="Inline Frame Example" width="500" height="500" src="workStation.html">
-</iframe>
+    <div class="container">
+        <div class="container_items">
+            <div class="item1 itemDraggable" draggable="true">1</div>
+            <div class="item2 itemDraggable" draggable="true">2</div>
+            <div class="item3 itemDraggable" draggable="true">3</div>
+        </div>
+        <div class="workStation" id="work">
+            <div class="draggable">
+                <div class="resizer ne"></div>
+                <div class="resizer nw"></div>
+                <div class="resizer sw"></div>
+                <div class="resizer se"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

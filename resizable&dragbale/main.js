@@ -1,4 +1,5 @@
 const el = document.querySelector('.draggable');
+const container = document.getElementById('container');
 let isResizing = false;
 let isActiveResizers = false;
 el.addEventListener('mousedown', mouseDownDrag);
@@ -16,8 +17,8 @@ function activeResizers(e) {
 // This function allows to move te item it make te item "Dragable"
 function mouseDownDrag(e) {
 
-    window.addEventListener('mousemove', mouseMove);
-    window.addEventListener('mouseup', mouseUp);
+    container.addEventListener('mousemove', mouseMove);
+    container.addEventListener('mouseup', mouseUp);
 
     let prevX = e.clientX;
     let prevY = e.clientY;
@@ -39,7 +40,7 @@ function mouseDownDrag(e) {
     }
 
     function mouseUp() {
-        window.removeEventListener('mousemove', mouseMove);
+        container.removeEventListener('mousemove', mouseMove);
     }
 
 }
@@ -53,8 +54,8 @@ function mouseDownResize(e) {
     let prevX = e.clientX;
     let prevY = e.clientY;
 
-    window.addEventListener('mousemove', mouseMove);
-    window.addEventListener('mouseup', mouseUp);
+    container.addEventListener('mousemove', mouseMove);
+    container.addEventListener('mouseup', mouseUp);
 
     function mouseMove(e) {
         const rect = el.getBoundingClientRect();
@@ -80,7 +81,7 @@ function mouseDownResize(e) {
     }
 
     function mouseUp() {
-        window.removeEventListener('mousemove', mouseMove);
+        container.removeEventListener('mousemove', mouseMove);
         isResizing = false;
     }
 

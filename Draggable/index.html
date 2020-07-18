@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
-    <title>.:Dragable&Resizable:.</title>
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, 
+        user-scalable=no" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Drag/Drop/Bounce</title>
 </head>
 
 <body>
-    <div id="outcontainer">
+
+    <div id="outerContainer">
         <div id="container">
-            <div class="draggable">
+            <div id="item">
                 <div class="resizer ne"></div>
                 <div class="resizer nw"></div>
                 <div class="resizer sw"></div>
@@ -19,7 +21,7 @@
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="draggable.js"></script>
 </body>
 
 </html>

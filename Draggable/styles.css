@@ -1,10 +1,5 @@
-body {
-    background-color: rgb(254, 254, 255);
-}
-
 #container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     height: 400px;
     background-color: #333;
     display: flex;
@@ -13,42 +8,35 @@ body {
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
-    overflow-x: scroll;
-    overflow-y: scroll;
-    padding: 10px;
 }
 
-.draggable {
+#item {
+    width: 100px;
     height: 100px;
-    width: 150px;
-    position: absolute;
-    min-width: 150px;
-    min-height: 100px;
-    background-color: rgb(13, 173, 173);
+    background-color: rgb(245, 230, 99);
+    border: 10px solid rgba(136, 136, 136, .5);
+    /*border-radius: 50%;*/
+    touch-action: none;
+    user-select: none;
+    display: flex;
 }
 
-.draggable2 {
-    height: 100px;
-    width: 150px;
-    position: relative;
-    margin-top: 200px;
-    min-width: 150px;
-    min-height: 100px;
-    background-color: rgb(173, 85, 13);
+#item:active {
+    background-color: rgba(168, 218, 220, 1.00);
 }
 
-.draggable:hover {
-    cursor: grab;
+#item:hover {
+    cursor: pointer;
+    border-width: 20px;
 }
 
 .resizer {
-    position: absolute;
     background-color: rgb(2, 2, 2);
     width: 8px;
     height: 8px;
     border-radius: 100%;
     z-index: 2;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .resizer.nw {

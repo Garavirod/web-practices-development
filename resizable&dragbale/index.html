@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles2.css">
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
     <title>Document</title>
 </head>
 
@@ -16,16 +16,11 @@
             <div class="item2 itemDraggable" draggable="true">2</div>
             <div class="item3 itemDraggable" draggable="true">3</div>
         </div>
-        <div class="workStation" id="work">
-            <div class="draggable">
-                <div class="resizer ne"></div>
-                <div class="resizer nw"></div>
-                <div class="resizer sw"></div>
-                <div class="resizer se"></div>
-            </div>
+        <div id="workStation">
+            <iframe src="workStation.html" frameborder="0" id="iframeWS" class="iframestation"></iframe>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="dragItems.js"></script>
 </body>
 
 </html>

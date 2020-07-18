@@ -8,9 +8,12 @@
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 #item {
+    position: relative;
     width: 100px;
     height: 100px;
     background-color: rgb(245, 230, 99);
@@ -18,7 +21,8 @@
     /*border-radius: 50%;*/
     touch-action: none;
     user-select: none;
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 #item:active {
@@ -26,17 +30,18 @@
 }
 
 #item:hover {
-    cursor: pointer;
+    cursor: grab;
     border-width: 20px;
 }
 
 .resizer {
+    position: absolute;
     background-color: rgb(2, 2, 2);
     width: 8px;
     height: 8px;
     border-radius: 100%;
     z-index: 2;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .resizer.nw {

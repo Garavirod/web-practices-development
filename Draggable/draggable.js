@@ -74,4 +74,5 @@ function drag(e) {
 
 function setTranslate(xPos, yPos, el) {
     el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    el.style.margin = "20px 20px 20px 20px";
 }

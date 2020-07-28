@@ -89,6 +89,7 @@ function makeResizableDiv(div) {
         })
 
         function resize(e) {
+            isResizing = true;
             if (currentResizer.classList.contains('bottom-right')) {
                 const width = original_width + (e.pageX - original_mouse_x);
                 const height = original_height + (e.pageY - original_mouse_y)
@@ -133,7 +134,8 @@ function makeResizableDiv(div) {
         }
 
         function stopResize() {
-            container.removeEventListener('mousemove', resize)
+            container.removeEventListener('mousemove', resize);
+            isResizing = false;
         }
     }
 }

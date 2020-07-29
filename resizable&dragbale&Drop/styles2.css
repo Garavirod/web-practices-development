@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(254, 254, 255);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around; */
+}
+
+.container_items {
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_items>* {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container_items div:hover {
+    cursor: grab;
+}
+
+.item1 {
+    background-color: rgb(216, 98, 98);
+}
+
+.item2 {
+    background-color: rgb(13, 139, 223);
+}
+
+.item3 {
+    background-color: rgb(111, 230, 111);
+}
+
+
+/* #workStation {
+    width: 90%;
+    height: 400px;
+    max-height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} */
+
+#workStation {
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    touch-action: none;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 10px;
+    /* top: 50%; */
+}
+
+
+/* #container {
+    position: absolute;
+    margin: 10px;
+    width: 90%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    touch-action: none;
+    overflow-y: scroll;
+    overflow-x: scroll;
+} */
+
+#item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(157, 245, 99);
+    border: 2px solid rgba(136, 136, 136, .5);
+    /*border-radius: 50%;*/
+    touch-action: none;
+    user-select: none;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#item:active {
+    background-color: rgba(168, 218, 220, 1.00);
+}
+
+#item:hover {
+    cursor: grab;
+    border-width: 3px;
+}
+
+.resizer {
+    position: absolute;
+    background-color: rgb(236, 5, 197);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.resizer.top-left {
+    top: -5px;
+    left: -5px;
+    cursor: nw-resize;
+}
+
+.resizer.top-right {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+.resizer.bottom-left {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+}
+
+.resizer.bottom-right {
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+}

@@ -12,10 +12,9 @@ function activeResizers(e) {
 
 
 /*Make resizable div by Hung Nguyen*/
-function makeResizableDiv(div) {
+function makeResizableDiv(element) {
     const container = document.getElementById('workStation');
-    const element = document.querySelector(div);
-    const resizers = document.querySelectorAll(div + ' .resizer');
+    const resizers = document.querySelectorAll('.resizable' + ' .resizer');
     element.addEventListener('click', activeResizers);
     const minimum_size = 20;
     let original_width = 0;
@@ -89,6 +88,3 @@ function makeResizableDiv(div) {
         }
     }
 }
-
-
-makeResizableDiv('.resizable');

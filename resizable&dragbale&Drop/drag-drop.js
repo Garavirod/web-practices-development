@@ -1,16 +1,23 @@
-// let workStation = document.getElementById('workStation');
-// let iframeElement = document.createElement('iframe');
-// iframeElement.classList.add("iframestation");
-// iframeElement.setAttribute("src", "workStation.html");
-// iframeElement.setAttribute("id", "iframeWS");
-// workStation.appendChild(iframeElement);
-
 var coorX = null;
 var coorY = null;
 var inWorkSta = false;
 var currentElem = null;
+var dragItemsDraggable = null;
+var dragItemsResizable = null;
+
+function getItems() {
+
+    dragItemsDraggable = document.querySelectorAll(".draggable");
+    dragItemsResizable = document.querySelectorAll('.resizable');
+    dragItemsDraggable.forEach(di => {
+        makeDraggable(di);
+    });
 
 
+    dragItemsResizable.forEach(ri => {
+        makeResizableDiv(ri);
+    });
+}
 
 function createResizers() {
     let resizers = document.createElement('div');
@@ -34,6 +41,9 @@ function createResizers() {
 }
 
 window.onload = function() {
+
+    getItems();
+
     let itemDraggable = document.querySelectorAll('.itemDraggable');
     let workStation = document.getElementById('workStation');
 
@@ -91,6 +101,7 @@ window.onload = function() {
         currentElem.style.transform = "translate3d(" + coorX + "px, " + coorY + "px, 0)";
         currentElem.appendChild(createResizers());
         this.append(currentElem);
+        getItems();
         console.log("dropped");
     }
 

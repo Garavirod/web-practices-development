@@ -1,0 +1,522 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header, main, section{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+#navbarDesigno{
+    padding: 10px;
+    display: flex;      
+    justify-content: space-between;
+}
+
+#linksHeader a{
+    font-size: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;    
+}
+
+#linksHeader a:hover{
+    text-decoration: underline;
+    text-shadow: salmon;   
+}
+
+#linkAppName a{
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;    
+}
+
+#linksHeader{
+    display: flex;
+    align-content: center;
+}
+
+/* HEADER CONTENT */
+
+#HeaderContent{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 127, 80, 0.76);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+#text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+
+#text-content div{
+    margin-bottom: 10px;
+}
+
+#text-content h1, #text-content p{
+    color: white;
+    
+}
+
+.btn-desgno{
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    background-color: aliceblue;
+    color: slategray;    
+}
+
+.btn-desgno:hover{
+    background-color: slategray;
+    color: aliceblue;
+}
+
+#headerImage{
+    width: 50%;    
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-end;    
+    align-items: center;    
+}
+
+#headerImage img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    width: 50%;    
+}
+
+/* MAIN CONTENT PROJECTS */
+
+#mainContent{
+    padding: 20px;
+    background-color: rgb(206, 206, 206);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 550px;    
+}
+
+#firstProject{
+    /* padding-right: 20px; */
+    position: relative;
+    width: 50%;    
+}
+
+#firstProject > img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#firstProject > img, .descriptionProject{
+    border-radius: 10px;
+}
+
+.descriptionProject{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.descriptionProject h4{
+    font-size: 40px;
+}
+
+
+#remainProject{
+    /* background-color: blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+#remainProject > div{    
+    position: relative;
+    /* background-color: brown; */
+    max-height: 250px;    
+    width: 90%;
+}
+
+#remainProject > div > img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about{
+    display: flex;    
+    justify-content: space-between;    
+    margin-top: 90px;
+}
+
+#about>div{
+    width: 30%;    
+    
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.about-content > img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-content h5, .about-content p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+#about-parent{
+    position: relative;
+
+}
+
+
+#floating{    
+    background-color: rgb(240, 144, 110);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+    height: 250px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    z-index: 20;
+    margin-bottom: -50px;        
+}
+
+#text-floating{    
+    color: white;
+    width: 70%;
+}
+
+#text-floating h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(36, 35, 35);
+    padding-bottom: 10px;
+
+}
+
+#navFooter{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(36, 35, 35);
+}
+
+#contacts{
+    margin-top: 15px;    
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-text{
+    color: white;
+}
+
+#socialNet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+#socialNet>div{
+    width: 40px;
+    height: 40px;
+}
+
+#socialNet a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(241, 138, 100);
+}
+
+
+#navbarFooter{
+    background-color: rgb(36, 35, 35);
+    padding: 10px;
+    display: flex;      
+    justify-content: space-between;
+}
+
+#linksFooter{
+    display: flex;
+}
+
+#linksFooter a{
+    font-size: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;    
+}
+
+#linkAppNameFooter a{
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;    
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    /* HEADER CONTENT */
+    #headerImage img{
+        width: 70%;    
+    }
+
+    /* PRJECTS CONTNET */
+    .descriptionProject h4{
+        font-size: 20px;
+    }
+    
+
+}
+
+/* WHEN 500 BEING REACHED */
+
+@media screen and (max-width: 500px) {
+    #headerImage img{
+        width: 70%;    
+    }
+
+    #text-content{
+        padding: 10px;
+    }
+    #text-content h1, #text-content p{
+        font-size: 16px;
+    }
+
+    /* PRJECTS CONTNET */
+    .descriptionProject h4{
+        font-size: 15px;
+    }
+
+    #remainProject{
+        justify-content: space-evenly;
+    }
+
+    /* FLOATING */
+    #text-floating h4{
+        font-size: 20px;
+    }
+}
+
+
+/* WHEN 400 BEIGN REACHED */
+@media screen and (max-width: 400px) {
+
+    /* NAVBAR */
+
+    #navbarDesigno{        
+        flex-direction: column;
+        justify-content: center;        
+        align-content: center;
+        align-items: center;
+    }
+
+    #linksHeader{
+        margin-top: 20px;
+    }
+
+
+    #linksHeader a{
+        margin-top: 10px;
+        font-size: 16px;                          
+    }
+    
+    #linkAppName a{
+        font-size: 25px;                           
+    }  
+
+    /* HEADER CONTENT */
+    #HeaderContent{
+        display: flex;
+        flex-direction: column;                
+    }
+
+    #text-content h1{
+        font-size: 19px;
+    }
+
+    #headerImage,#text-content{
+        width: 100%;
+    }
+
+    #headerImage img{
+        width: 60%;    
+    }
+
+    /* PRJECTS CONTNET */
+    #mainContent{
+        flex-direction: column;
+    }
+
+    #firstProject{
+        height: 200px;
+    }
+
+    #firstProject, #remainProject{
+        width: 100%;
+    }
+
+    #remainProject div, #remainProject img{
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+    }
+    
+    #mainContent{
+        padding: 10px;
+        height: 700px;        
+    }
+
+    #remainProject{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;              
+    }
+
+    /* ABOUT */
+
+    #about{
+        flex-direction: column;
+        align-content: space-around;        
+        padding: 10px;
+    }
+
+    #about div.about-content{        
+        width: 100%;     
+        padding: 10px;   
+        
+    }
+
+        /* FLOATING */
+    #text-floating h4{
+        font-size: 15px;
+    }
+
+    #text-floating p{
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+
+    #contacts{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #contacts div{
+        margin: auto;
+        padding: 10px;        
+    }
+}
+
+/* WHEN 300 BEING REACHED */
+@media screen and (max-width: 310px) {
+
+        /* HEADER CONTENT */
+        #HeaderContent{
+            padding: 7px;
+            display: flex;
+            flex-direction: column;            
+            height: 650px;
+            
+        }
+    
+        #text-content h1{
+            font-size: 16px;
+        }
+    
+        #headerImage,#text-content{
+            width: 100%;
+        }
+    
+        #headerImage img{
+            width: 100%;    
+        }
+    
+
+     /* FLOAING */
+     #floating{
+         flex-direction: column;         
+     }
+
+     #floating div{
+        margin: 4px;
+     }
+
+
+     /* FOOTER */
+     #navbarFooter{        
+        flex-direction: column;
+        text-align: center;        
+    }
+
+    #navbarFooter div{
+        margin: 3px;
+    }
+
+    #linksFooter{
+        justify-content: center;
+    }
+
+
+
+     
+}
+
+

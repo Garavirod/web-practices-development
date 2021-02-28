@@ -37,11 +37,12 @@
   min-height: 180px;
   padding: 30px;
   width: 25%;
+  height: 100px;
   background-color: white;
   border-radius: 4px;
 }
 #advanced-statistics #cards #cards-container .card .circle-card {
-  width: 30%;
+  width: 20%;
   height: 40%;
   text-align: center;
   color: #30b5d6;

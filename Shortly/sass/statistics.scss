@@ -35,17 +35,18 @@
         #cards-container{                        
             display: flex;
             justify-content: space-between;
-
+            
             .card{
                 z-index: 1;
                 min-height: 180px;
                 padding:30px;
                 width: 25%;
+                height: 100px;
                 background-color: $light;
                 border-radius: 4px;
 
                 .circle-card{                    
-                    width: 30%;
+                    width: 20%;
                     height: 40%;
                     text-align: center;                                           
                     color: $secundary;                    

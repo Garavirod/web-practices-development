@@ -1,0 +1,24 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: baseline;
+}
+#navbar ul li {
+  margin-right: 6px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #3c3444;
+}
+#navbar ul li #nameApp-link {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=navbar.css.map */

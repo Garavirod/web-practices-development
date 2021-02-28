@@ -1,0 +1,39 @@
+@import 'shared';
+@import 'navbar';
+@import 'cover-page';
+@import 'statistics';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 80%;
+    margin:auto
+}
+
+
+.btn-primary{
+    background-color: $secundary;
+    padding: 7px;    
+    border-radius: 10px;
+    color: white;    
+    border: none;
+    &:hover{
+        background-color: $secundary-darken;
+    }
+}
+
+.btn-secondary{
+    background-color: $light;
+    padding: 7px;    
+    border-radius: 10px;
+    color: $primaryText;    
+    border: none;
+    &:hover{
+        background-color: $light-darken;
+    }
+}

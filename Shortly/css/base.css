@@ -193,6 +193,7 @@ header #box-link button {
   padding: 150px 30px 30px 30px;
   min-height: 350px;
   /* CARDS */
+  /* When 750 being broken */
   /* WHEN 600PX BEING BROKEN */
   /* end 600px */
   /* WHEN 600PX BEING BROKEN */
@@ -201,6 +202,40 @@ header #box-link button {
   /* end 550px */
   /* WHEN 320PX BEING BROKEN */
   /* end 3200px */
+}
+#advanced-statistics #links-container {
+  width: 85%;
+  height: 200px;
+  overflow-y: scroll;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#advanced-statistics #links-container .link-stored {
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+#advanced-statistics #links-container .link-stored .url, #advanced-statistics #links-container .link-stored .control-link {
+  padding: 5px;
+}
+#advanced-statistics #links-container .link-stored .url {
+  width: 75%;
+  padding: 0px 15px 0px 15px;
+  overflow-x: scroll;
+}
+#advanced-statistics #links-container .link-stored .control-link {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+#advanced-statistics #links-container .link-stored .control-link button {
+  width: 40%;
 }
 #advanced-statistics #text-main {
   text-align: center;
@@ -299,6 +334,34 @@ header #box-link button {
   #advanced-statistics #cards #cards-container .card .card-text p {
     color: #a2a0a3;
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #advanced-statistics #links-container {
+    justify-content: space-between;
+  }
+  #advanced-statistics #links-container .link-stored {
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    padding: 5px;
+  }
+  #advanced-statistics #links-container .link-stored .url, #advanced-statistics #links-container .link-stored .control-link {
+    width: 100%;
+    text-align: center;
+  }
+  #advanced-statistics #links-container .link-stored .control-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  #advanced-statistics #links-container .link-stored .control-link a {
+    margin-bottom: 10px;
+  }
+  #advanced-statistics #links-container .link-stored .control-link button {
+    margin: auto;
+    width: 20%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -443,6 +506,9 @@ footer #footer-nav ul {
 footer #footer-nav ul li {
   margin: 5px;
 }
+footer #footer-nav ul li a:hover {
+  color: #30b5d6;
+}
 footer #footer-nav ul li a {
   text-decoration: none;
   color: white;
@@ -466,6 +532,13 @@ footer #social-networks ul li {
 }
 footer #social-networks ul li i {
   font-size: 30px;
+}
+footer #social-networks ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer #social-networks ul li a:hover {
+  color: #30b5d6;
 }
 @media screen and (max-width: 850px) {
   footer #footer-nav ul li a {

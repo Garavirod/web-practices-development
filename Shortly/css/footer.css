@@ -63,6 +63,9 @@ footer #footer-nav ul {
 footer #footer-nav ul li {
   margin: 5px;
 }
+footer #footer-nav ul li a:hover {
+  color: #30b5d6;
+}
 footer #footer-nav ul li a {
   text-decoration: none;
   color: white;
@@ -86,6 +89,13 @@ footer #social-networks ul li {
 }
 footer #social-networks ul li i {
   font-size: 30px;
+}
+footer #social-networks ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer #social-networks ul li a:hover {
+  color: #30b5d6;
 }
 @media screen and (max-width: 850px) {
   footer #footer-nav ul li a {

@@ -44,6 +44,8 @@ footer{
     display: flex;
     color:$light;
     height: 250px;
+
+    
     
     #app-name-link{
         width: 40%;
@@ -70,7 +72,9 @@ footer{
         ul{
             list-style: none;
            
-            li{ 
+            li{   
+                
+                a:hover{color: $secundary;}
                 a{
                     text-decoration: none;
                     color: $light;
@@ -97,9 +101,13 @@ footer{
             list-style: none;
             li{
                 margin: 10px;                
-                i{
-                    font-size: 30px;
+                i{font-size: 30px;}                
+                a {
+                    text-decoration: none;
+                    color: $light;                       
+                    &:hover{color: $secundary;}
                 }
+
             }
         }
     }

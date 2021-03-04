@@ -5,6 +5,17 @@
     display: flex;
     justify-content: space-between;    
     padding: 10px;
+    div#list-link{
+        display: flex;
+        align-items: baseline;
+        #nameApp-link{
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            color: $primaryText;
+            margin-right: 5px;
+        }
+    }
     ul{
                        
         display: flex;
@@ -18,10 +29,45 @@
                 color: $primaryText;
             }
 
-            #nameApp-link{
+           
+        }
+    }
+
+    #buttons-logs{
+        button#menu{
+            visibility: hidden;
+        }
+    }
+
+    /* When 580px being broken */
+    @media screen and (max-width: 580px){       
+
+        #buttons-logs{   
+            display: flex;
+            flex-direction: row-reverse;                                
+            button#menu{
+                visibility: visible;
+                background-color: $light;
+                color: $primary;
+                border-style: none;
                 font-size: 20px;
-                font-weight: bolder;
+                padding: 10px;
+                border-radius: 10px;           
             }
+
+            &:nth-child(2){
+                visibility: hidden;
+            }
+
+            &:nth-child(3){
+                visibility: hidden;
+            }
+        }
+
+        #list-link ul li{
+            display:none;
         }
     }
 }
+
+
